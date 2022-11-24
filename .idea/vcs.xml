@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/My-Test-Remote-Repo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/My-Test-Remote-Repo/My-Test-Remote-Repo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/computer-vision-rock-paper-scissors" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hangman" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/practice/Locally-Created-Test-Repo" vcs="Git" />
+  </component>
+</project>
