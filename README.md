@@ -7,7 +7,8 @@ this will be used later on to create a live RPS game where i can use my camera t
 this model can then be exported as a .h5 file and .txt to allow python to manage and use the model created
 
 MILESTONE 2
-
+I have downloaded my model from the goog teachable machine website. this included the labels.txt that contained the four different options. rock, paper, scissors or no readable data.
+i have then used a program to quickly test my model if it works
 
 
 MILESTONE 3
