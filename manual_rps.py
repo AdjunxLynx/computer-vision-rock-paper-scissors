@@ -20,9 +20,10 @@ def get_user_choice():
 get_user_choice()
         
 
-def get_winner():
-    computer = get_computer_choice()
-    player = get_user_choice()
+def get_winner(computer_choice, user_choice):
+    
+    computer = computer_choice
+    player = user_choice
     if computer == "Rock" and player == "Scissors":
         print("You lost")
     elif computer == "Rock" and player == "Rock":
@@ -42,3 +43,4 @@ def get_winner():
     else:
         print("You lost")
         
+def play():
