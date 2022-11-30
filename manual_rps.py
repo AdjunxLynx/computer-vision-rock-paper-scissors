@@ -11,13 +11,13 @@ get_computer_choice()
 def get_user_choice():
     options = ["Rock", "Paper", "Scissors"]
     while True:
-        choice = input("Enter 'rock', 'paper' or 'scissors' ")
+        choice = input("Enter 'Rock', 'Paper' or 'Scissors' ")
         if choice in options:
             return choice
         else:
             print("Unknown input, please try again")
         
-get_user_choice()
+
         
 
 def get_winner(computer_choice, user_choice):
@@ -44,3 +44,9 @@ def get_winner(computer_choice, user_choice):
         print("You lost")
         
 def play():
+    computer_choice = get_computer_choice()
+    user_choice = get_user_choice()
+    get_winner(computer_choice, user_choice)
+
+
+play()
