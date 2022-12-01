@@ -3,11 +3,14 @@ from keras.models import load_model
 import numpy as np
 import time
 import random
+import matplotlib.pyplot as plt
+
 
 def get_winner(computer_choice, user_choice):
     
     computer = computer_choice
     player = user_choice
+    print("Computer Chose " + str(computer))
     if computer == "Rock" and player == "Scissors":
         return "You lost"
     elif computer == "Rock" and player == "Rock":
@@ -51,7 +54,7 @@ def get_prediction(model, cap):
             return (options[index])
         
         if cv2.waitKey(1) & 0xFF == ord('q'):
-            break
+            quit()
 
 def get_computer_choice():
     options = ["Rock", "Paper", "Scissors"]
@@ -71,8 +74,6 @@ def play():
         computer_choice = get_computer_choice()
         while True:
             user_choice = get_prediction(model, cap)
-            print("here")
-            print(user_choice)
             if user_choice != "Nothing":
                 break
             else:
@@ -83,13 +84,15 @@ def play():
         if winner == "You lost":
             rounds_played += 1
             computer_wins += 1
-            waste_time()
         elif winner == "You won!":
             rounds_played += 1
             user_wins += 1
-            waste_time()
+ 
         else:
             rounds_played += 1
+        print("The Computer has won " +str(computer_wins)+ " times and you have won " + str(user_wins) + " times so far")
+        print(str(rounds_played) + " Games played so far")
+        waste_time()
             
         
         if computer_wins == 3:
@@ -103,8 +106,11 @@ def play():
 
 def waste_time():
     before = time.time()
+    print("Press C To Continue")
     while True:
-        if time.time() - before >= 3:
+        if cv2.waitKey(1) & 0xFF == ord('c'):
             break
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            quit()
 
 play()

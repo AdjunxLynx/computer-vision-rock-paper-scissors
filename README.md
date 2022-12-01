@@ -23,3 +23,6 @@ finally, i created a play() function to wrap all my other functions in and creat
 
 
 MILESTONE 5
+i combined all my functions into a single function called play(). i also created an extra function called waste_time() so that i could allow the user to see the results of a single round instead of the game continuing without telling the user (or letting them see)
+i finally updated my final logic to ensure the user could play the game in their own time by waiting for a "q" or "c" (for continue). i changed what "q" would do, so instead of breaking from the main loop, it quit the entire python program so i didnt have to alos quit the outer loop after the first loop.
+i also ensured the player got updated with all data needed, including total games played, user wins and computer wins 
